@@ -12,7 +12,7 @@ function Attendance() {
   const [postAttendance, setPostAttendance] = useState<{ [key: string]: singleStudent }>({});
   const [dates, setDates] = useState<date[]>([])
 
-  const date = new Date().toLocaleDateString("en-US", { day: '2-digit', month: 'long', year: 'numeric', timeZone: 'Asia/Karachi' })
+  // const date = new Date().toLocaleDateString("en-US", { day: '2-digit', month: 'long', year: 'numeric', timeZone: 'Asia/Karachi' })
   const day = new Date().toLocaleString("en-US", { weekday: 'long', timeZone: 'Asia/Karachi' });
 
   const handleAttendanceChange = (studentName: string, darja: string, date: string, value: string) => {
